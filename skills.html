@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Overview</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lastica:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lastica', sans-serif;
+            background: url('2.png') no-repeat center center fixed; /* Add your background image here */
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative; /* For positioning the back button */
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            justify-content: space-between;
+        }
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative; /* For positioning buttons inside */
+        }
+
+        .heading {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .content {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 50px; /* Add space for buttons */
+        }
+
+        .view-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 10px 5px;
+        }
+
+        .view-button:hover {
+            background-color: #45a049;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">&#9664;</a> <!-- Go Back Arrow Button -->
+    <div class="container">
+        <div class="glass-box">
+            <h2 class="heading">Tech Skills</h2>
+            <div class="content">
+                <p>• Python </p>
+                <p>• PYTHON DEVELOPMENT </p>
+                <p>• JAVASCRIPT</p>
+                <p>• C++</p>
+                <p>• HTML</p>
+                <p>• CSS</p>
+                <p>• Full Stack Developer</p>
+                <p>• Proficient in GIT</p>
+                <p>• Knowledge of cloud platforms such as AWS and Azure</p>
+                <p>• MySQL and MongoDB - Database Management Systems</p>
+            </div>
+           
+            <a href="https://www.linkedin.com/in/nadish-np/details/certifications/" class="view-button">View liscence and Certification</a>
+        </div>
+        <div class="glass-box">
+            <h2 class="heading">Soft Skills</h2>
+            <div class="content">
+                <p>• Strong communication and interpersonal skills.</p>
+                <p>• Excellent problem-solving abilities and analytical thinking.</p>
+                <p>• Team collaboration and leadership experience.</p>
+                <p>• Adaptable and quick learner with a proactive attitude.</p>
+                <p>• Strong Negotiation Skills.</p>
+                <p>• Strong Time Management Skills.</p>
+                <p>• Strong written and verbal communication skills.</p>
+                <p>• Have 6 month part time experience as system manager,and stock manager .</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

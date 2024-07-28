@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NADISH NP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lastica:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lastica', sans-serif; /* Updated font to Lastica */
+            background: url('2.png') no-repeat center center fixed; /* Add your background image here */
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            padding-top: 50px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Add margin-bottom for spacing before the button */
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-left: 20px;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            background: rgba(255, 255, 255, 0.2); /* Glass effect */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            margin: 5px 0;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px; /* Curve radius */
+            transition: background 0.3s;
+            backdrop-filter: blur(10px); /* Glass effect */
+            -webkit-backdrop-filter: blur(10px); /* Glass effect */
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .button i {
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .about-button {
+            position: absolute;
+            bottom: 20px;
+            background-color: #45a049;
+        }
+
+        .about-button:hover {
+            background-color: #45a049;
+        }
+
+        .blurred-text-box {
+            width: 80%;
+            max-width: 700px;
+            height: 150px; /* Approximately 5 lines of text */
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 5px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 20px 0;
+        }
+
+        .blurred-text-box textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        .contact-form {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2); /* Glass effect */
+            backdrop-filter: blur(10px); /* Glass effect */
+            -webkit-backdrop-filter: blur(10px); /* Glass effect */
+            border-radius: 20px; /* Curve radius */
+            padding: 20px;
+            box-sizing: border-box;
+            width: 300px; /* Adjust width as needed */
+        }
+
+        .contact-form .contact-item {
+            background: rgba(255, 255, 255, 0.3); /* Slightly different glass effect for text */
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .slide-up {
+            transform: translateY(-100%);
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>NADISH NP</h1>
+   
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/nadish-np/" class="button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/heyitsnadsh/" class="button"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://github.com/nadish349" class="button"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="profile-photo">
+            <img src="pro.png" alt="Profile Photo">
+        </div>
+    </div>
+    <div class="blurred-text-box">
+        <textarea readonly>Hello! I'm Nadish, an enthusiastic engineer driven by dreams and a strong entrepreneurial spirit.
+
+Outside of engineering, my passion lies in the world of business. I view entrepreneurship as the key to TURNING IDEAS INTO REALITY and making a meaningful difference. Whether it's launching startups or contributing to established businesses, I'm captivated by the vibrant realm of opportunities that business offers.
+
+While I cherish the value of teamwork and collaboration, I also embrace my role as a leader, unafraid to forge my own path. I am committed to motivating others with a clear and compelling vision.
+
+Embark with me on this exciting adventure, and together, let's build something extraordinary!</textarea>
+    </div>
+    <a href="knowaboutme.html" class="button about-button" onclick="fadeOutAndRedirect(event)">Know About Me</a>
+
+    <script>
+        function fadeOutAndRedirect(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = 'knowaboutme.html';
+            }, 500); // Match this timeout with the fade-out duration
+        }
+    </script>
+</body>
+</html>

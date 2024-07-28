@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Certification</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lastica:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Lastica', sans-serif;
+            background: url('2.png') no-repeat center center fixed; /* Add your background image here */
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* For positioning the button */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+        }
+
+        .certificate-row {
+            display: flex;
+            width: 100%;
+            gap: 20px; /* Adds space between certificate and text box */
+            align-items: flex-start;
+            margin-bottom: 20px; /* Adds space between rows */
+        }
+
+        .certificate {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .certificate img {
+            width: 100%;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-box {
+            width: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 5px;
+            padding: 15px;
+            box-sizing: border-box;
+            height: 150px; /* Adjust height as needed */
+        }
+
+        .text-box textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        .view-projects-button, .my-skills-button {
+            margin-top: 20px;
+            padding: 20px 20px;
+            font-size: 22px;
+            color: rgb(255, 255, 255);
+            background: #00fd54f8; /* Glass effect */
+            border: none;
+            border-radius: 20px; /* Curve radius */
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s, opacity 0.3s;
+            backdrop-filter: blur(10px); /* Glass effect */
+            -webkit-backdrop-filter: blur(10px); /* Glass effect */
+        }
+
+        .view-projects-button:hover, .my-skills-button:hover {
+            background: rgba(6, 102, 38, 0.798);
+        }
+
+        .fade {
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
+
+        .my-skills-button {
+            position: absolute;
+            top: 20px; /* Adjust distance from top */
+            right: 200px; /* Adjust distance from right */
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">&#9664;</a> <!-- Go Back Arrow Button -->
+    <button class="my-skills-button" onclick="fadeOutAndRedirect('skills.html')">MY SKILLS </button>
+    <h1>Course Certification</h1>
+    <div class="section">
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="c5.png" alt="Certificate 1">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+    Udemy Mini MBA in Entrepreneurship from MTF Institute** is a comprehensive course designed to equip participants with essential business skills and knowledge for successful entrepreneurship. Offered on Udemy in collaboration with MTF Institute, this mini MBA covers fundamental topics such as business strategy, financial management, marketing, and leadership. The course aims to provide practical insights and tools for aspiring entrepreneurs to launch and manage their ventures effectively. With a focus on real-world applications and interactive learning, it is tailored for individuals seeking to enhance their entrepreneurial skills and drive business success.
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="c2.png" alt="Certificate 2">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+    Infofys Cryptography with Python** equips learners with essential skills in cryptographic techniques using Python. It covers fundamental concepts such as encryption, decryption, hashing, and key management. Participants will gain hands-on experience with libraries like PyCrypto and hashlib, learning to implement secure algorithms and protocols. The course emphasizes practical applications in securing data and communications, preparing individuals for roles in cybersecurity and software development. With a focus on both theory and practical coding exercises, it provides a solid foundation for effectively applying cryptographic principles in real-world scenarios.
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="c3.png" alt="Certificate 3">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+Cyber Security with Cloud Computing** on LinkedIn Learning provides a comprehensive overview of safeguarding cloud environments. It covers key concepts such as cloud security architecture, risk management, and compliance, focusing on securing cloud infrastructures, applications, and data. The course delves into practical techniques for protecting against cyber threats, including encryption, identity and access management, and incident response. Participants will learn about various cloud security tools and strategies to enhance their knowledge in securing cloud services. Ideal for IT professionals and security specialists, this course equips individuals with the skills needed to protect cloud-based systems and ensure robust security practices.
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="c4.png" alt="Certificate 4">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+Santander and Google's Collaboration on Artificial Intelligence and Productivity** focuses on leveraging AI technologies to enhance financial services and operational efficiency. This partnership aims to integrate Google's AI and machine learning tools into Santander's banking operations to improve customer service, streamline processes, and boost overall productivity. Key areas include automating routine tasks, providing personalized financial advice, and enhancing data analysis capabilities. By combining Santander's industry expertise with Google's advanced AI technologies, the collaboration seeks to drive innovation and create more efficient and user-friendly banking solutions.
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="c1.png" alt="Certificate 5">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+Career Essentials in Generative AI by Microsoft** offers crucial skills for thriving in the AI field. It covers understanding generative models like GANs and VAEs, programming with Python, and using tools like TensorFlow and PyTorch. The program emphasizes ethical considerations, practical applications, and industry-specific use cases. By mastering these areas, individuals can excel in roles such as AI/ML Engineer or Data Scientist, ensuring a competitive edge in a rapidly evolving industry. Microsoft’s certification and resources provide foundational knowledge and hands-on experience for future success.
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <h1>Participation Certification</h1>
+    <div class="section">
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="p1.jpeg" alt="Participation Certificate 1">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+"5G and 6G Technologies: The Future of Connectivity"** explores the transformative advancements in mobile networks, focusing on the current 5G technology and the future potential of 6G. The talk covers how 5G enhances speed, connectivity, and the Internet of Things (IoT), revolutionizing industries and everyday experiences. It also delves into 6G's anticipated innovations, promising even faster speeds, ultra-low latency, and new applications such as advanced AI integration and immersive augmented reality. This discussion highlights how these technologies will shape the future of global communication and digital experiences.
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="p2.jpeg" alt="Participation Certificate 2">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+                    The AWS Cloud Computing workshop, hosted by Ruzivo School of Science and Technology, offered a comprehensive exploration into cloud technologies with a focus on Amazon Web Services (AWS). This hands-on workshop provided participants with valuable insights into AWS infrastructure, cloud services management, and best practices for deploying and scaling applications.Gained practical experience in utilizing AWS tools for effective cloud computing solutions, enhancing their skills in a key area of modern technology.
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="p3.jpeg" alt="Participation Certificate 3">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+certificate of participation in iedc italk conducted by rajiv veetil
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="p4.jpeg" alt="Participation Certificate 4">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+
+In the Software Engineer job simulation at JPMorgan Chase & Co., participants engaged in developing a market analysis tool using Python. The simulation provided an immersive experience in applying Python to real-world financial problems, focusing on data analysis, market trend prediction, and algorithm development. This hands-on project showcased participants' abilities to leverage Python for creating sophisticated tools to analyze and interpret market data, reflecting the innovative approach JPMorgan Chase & Co. employs in financial technology solutions.
+                    
+                    
+                </textarea>
+            </div>
+        </div>
+        <div class="certificate-row">
+            <div class="certificate">
+                <img src="p5.jpeg" alt="Participation Certificate 5">
+            </div>
+            <div class="text-box">
+                <textarea readonly>
+The Advanced Software Engineering Simulation at Walmart Global provided participants with an opportunity to tackle complex software engineering challenges in a global retail environment. In this simulation, participants were tasked with designing and implementing scalable software solutions to optimize supply chain operations, enhance customer experience, and integrate advanced analytics. Using cutting-edge technologies, the simulation emphasized practical skills in system design, performance optimization, and real-time data processing, mirroring Walmart’s commitment to leveraging technology for operational excellence and innovation in the retail industry.
+
+
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <button class="view-projects-button" onclick="fadeOutAndRedirect('project.html')">View Projects</button>
+
+    <script>
+        function fadeOutAndRedirect(url) {
+            // Apply fade-out class to body
+            document.body.classList.add('fade-out');
+            
+            // Wait for the fade-out transition to complete before redirecting
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // The duration should match the CSS transition duration
+        }
+    </script>
+</body>
+</html>
